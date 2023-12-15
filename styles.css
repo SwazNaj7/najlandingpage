@@ -1,26 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/pexels-photo-1054218.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .navbar {
     display: flex;
-    background-color: #1f2937;
-    padding: 30px;
+    background-color: rgba(31, 41, 55, 0.8);
+    padding: 10px;
     align-items: center;
     justify-content: center;
     width: 100%;
+    background-size: cover;
 }
 
 .headcontent {
     display: flex;
-    margin-left: 150px;
+    margin-left: 100px;
     margin-right: 150px;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #f9faf8;
 }
@@ -45,11 +58,15 @@ a {
     font-weight: 10px;
 }
 .maintext {
-    background-color: #1f2937;
+    background-color: rgba(31, 41, 55, 0.8);
     display: flex;
     padding-bottom: 100px;
     align-items: center;
     justify-content: center;
+
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 
 .mainitems {
@@ -59,21 +76,32 @@ a {
     max-width: 800px;
     margin: 0 auto;
     margin-left: 150px;
-    font-family: Arial, Helvetica, sans-serif;
     color: #f9faf8;
 }
+
 .mainpara {
     display: flex;
+    padding: 10px;
 }
+
+.headcontent > img {
+    width: 100px;
+    height: auto;
+    margin-top: 0px;
+}
+
 h2 {
+    display: flex;
+    padding: 10px;
+    padding-right: 20px;
     font-weight: bold;
     font-size: 48px;
 }
 img {
     display: flex;
-    width: 500px;
-    height: 300px;
-    margin-right: 150px;
+    width: 100%;
+    height: 500px;
+    margin-right: 90px;
     margin-left: 0;
     padding: 10px;
     margin-top: 30px;
@@ -85,12 +113,13 @@ button {
     justify-content: center;
     margin-top: 10px;
     font-size: 18px;
-    width: 120px;
+    width: 150px;
     padding: 10px;
     border: 0;
     border-radius: 10px;
     background-color: #3882f6;
     color: #f9faf8;
+    margin-left: 10px;
 }
 
 button:hover {
@@ -100,9 +129,11 @@ button:hover {
 .imageboxes,
 .imagebox2 {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    padding: 30px;
+    background-color: rgba(249, 250, 248, 0.5);
 }
 
 .imageboxes > h1{
@@ -110,7 +141,6 @@ button:hover {
     color: #1f2937;
     font-size: 36px;
     font-weight: 1500px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .info {
@@ -118,12 +148,14 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 48%;
+    margin-bottom: 20px;
 }
 
 .info > img {
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 70%;
+    height: 300px;
     padding: 0;
     margin: 20px;
     border: 4px solid #3882f6;
@@ -167,4 +199,48 @@ button:hover {
     font-size: 18px;
     font-weight: bold;
     color: #1f2937;
+    margin-bottom: 100px;
+}
+
+.callcontainer {
+    background-color: #3882f6;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 50px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+}
+
+.callcontainer > h3,
+.callcontainer > p {
+    color: #f9faf8;
+    padding-left: 50px;
+    font-size: 24px;
+}
+
+.callcontainer > p {
+    font-size: 18px;
+    font-weight: 100px;
+}
+
+.callbutton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.callbutton > button {
+    border: 10px #f9faf8;
+}
+
+.footer {
+    background-color: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.footertext {
+    color: #f9faf8;
 }
